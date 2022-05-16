@@ -10,9 +10,12 @@ public class AddressViewHolder extends RecyclerView.ViewHolder{
     private TextView tvAddress;
     public AddressViewHolder(@NonNull View itemView) {
         super(itemView);
+        tvAddress=itemView.findViewById(R.id.address);
     }
-    public void bind(String name){
-        tvAddress.setText(name);
+
+
+    public void bind(String address) {
+        tvAddress.setText(address);
     }
 }
 
